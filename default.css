@@ -1,35 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lato');
 /*!
- * Default theme for Pingendo
- * Homepage: http://pingendo.com
- * Copyright 2015 Pingendo
+ * Default theme for Task Force Spartan
+ * Homepage: http://taskforcespartan.net
+ * Copyright 2016 TaskForceSpartan
  * Licensed under MIT
- * Based on Bootstrap v3.3.4
-*/
-/* Add custom CSS classes here
- *
- * img {
- *   box-shadow : 0px 0px 10px black !important;
- * }
-*/
-/* Sticky footer styles
--------------------------------------------------- */
+ * Based on Bootstrap v3.3.7
+/* Sticky footer styles------------------------*/
 html,
 body {
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-/* Wrapper for page content to push down footer */
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  }
+/* Wrapper container */
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /* Negative indent footer by its height */
+  /* indent = -(footer.height) */
   margin: 0 auto -60px;
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
-/* Set the fixed height of the footer here */
+/* Footer Fixed Height */
 #footer {
   height: 60px;
   background-color: #f5f5f5;
@@ -50,13 +44,12 @@ body {
 code {
   font-size: 80%;
 }
+.detatch_content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 body {
   margin: 0;
 }
@@ -6604,18 +6597,6 @@ button.close {
     display: none !important;
   }
 }
-/*!
- * Pingendo customization for Bootstrap
- * Homepage: http://pingendo.com
- * Copyright 2015 Pingendo
- * Licensed under MIT
-*/
-/* Google web fonts support */
-/* TODO: webkit need this why ?*/
-html,
-body {
-  height: 100%;
-}
 /* text-inverse is deprecated */
 .text-inverse {
   color: #ffffff;
@@ -6818,4 +6799,3 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
-/* PINGENDO COMMENT DO NOT REMOVE */
