@@ -50,6 +50,7 @@ body {
 code {
   font-size: 80%;
 }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -94,6 +95,7 @@ a {
 }
 a:active,
 a:hover {
+  text-decoration: none !important;
   outline: 0;
 }
 abbr[title] {
@@ -1418,6 +1420,9 @@ a.bg-primary:hover {
 }
 .bg-success {
   background-color: #a3d7a3;
+}
+.bg-success:hover{
+    background-color:coral
 }
 a.bg-success:hover {
   background-color: #80c780;
