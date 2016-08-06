@@ -96,12 +96,21 @@ a:active,a:hover {
  /* Parallax base styles
   --------------------------------------------- */
 
-  .parallax {
+ .parallax {
+    height: 500px; /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
+    -webkit-perspective: 150px;
+    perspective: 150px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
   .parallax__layer {
@@ -112,15 +121,30 @@ a:active,a:hover {
     bottom: 0;
   }
 
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(45px) scale(.5);
+    transform: translateZ(45px) scale(.5);
+    z-index: 1;
+  }
+
   .parallax__layer--base {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    z-index: 4;
   }
 
   .parallax__layer--back {
-    -webkit-transform: translateZ(-1px);
-    transform: translateZ(-2px) scale(3);
+    -webkit-transform: translateZ(-150px) scale(2);
+    transform: translateZ(-150px) scale(2);
+    z-index: 3;
   }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-300px) scale(3);
+    transform: translateZ(-300px) scale(3);
+    z-index: 2;
+  }
+
 /* demo styles
   --------------------------------------------- */
 
@@ -134,13 +158,23 @@ a:active,a:hover {
 
    /* add some padding to force scrollbars */
   .parallax__layer {
-    padding: 25vh 0;
+    padding: 10vh;
+
   }
 .parallax__group {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
+	/*transform: translate3d(1000px, 0, -500px) rotateY(30deg); */
 }
+#group1 {
+    z-index: 5;
+  }
+
+
+#group2 {
+    z-index: 2;
+    }
 
    /* centre the content in the parallax layers */
   .title {
@@ -149,7 +183,7 @@ a:active,a:hover {
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	font-size: 200%;
+	font-size: 150%;
 	color: #f0f8ff;
 	  font-weight: bolder;
 	text-shadow: 1px 1px #333;
@@ -163,7 +197,6 @@ a:active,a:hover {
 	font-size: 100%;
 	color: #f0f8ff;
 }
-* {
-	margin: 0;
-	padding: 0:
+.noscroll {
+	overflow-y: hidden;
 }
