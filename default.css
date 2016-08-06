@@ -74,6 +74,23 @@ a:active,a:hover {
     text-decoration: underline;
 }
 .cover {
-
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 500px;
+    position: relative;
 }
+
+.btn-nav {
+    background-color: #db143c;
+    margin: 1px;
+    border-radius: 0px;
+    height: auto;
+    }
+
 
