@@ -125,8 +125,8 @@ a:active,a:hover {
   --------------------------------------------- */
 
   * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 .parallax {
     font-size: 200%;
@@ -134,17 +134,35 @@ a:active,a:hover {
 
    /* add some padding to force scrollbars */
   .parallax__layer {
-    padding: 100vh 0;
+    padding: 0 0 0 100vh;
   }
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
 
    /* centre the content in the parallax layers */
   .title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 200%;
+	color: #f0f8ff;
+	  font-weight: bolder;
+	text-shadow: 1px 1px #333;
   }
+.paradesc {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 100%;
+	color: #f0f8ff;
+}
 * {
 	margin: 0;
 	padding: 0:
