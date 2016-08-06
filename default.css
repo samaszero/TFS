@@ -119,7 +119,7 @@ a:active,a:hover {
 
   .parallax__layer--back {
     -webkit-transform: translateZ(-1px);
-    transform: translateZ(-1px);
+    transform: translateZ(-2px) scale(3);
   }
 /* demo styles
   --------------------------------------------- */
